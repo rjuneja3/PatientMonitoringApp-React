@@ -2,7 +2,7 @@
 const Schema = mongoose.Schema;
 
 const ReportSchema = new Schema({
-    patientEntity: {
+  patient: {
         type: Schema.Types.ObjectId,
         ref: "User",
       },

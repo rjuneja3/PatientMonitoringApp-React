@@ -34,7 +34,7 @@ exports.create = function (req, res) {
 user_ent._id = user._id;
     //req._id = user._id;
   }).then(function () {
-    report.patientEntity = user_ent._id;
+    report.patient = user_ent._id;
 
     report.save((err) => {
       if (err) {
@@ -79,7 +79,7 @@ exports.reportsOfPatient = function (req, res) {
     }
     user._id = patient._id;
   }).then(function () {
-    Report.find({ patientEntity: user._id })
+    Report.find({ patient: user._id })
       .sort('-createdAt')
       .populate("patient")
       .exec((err, reports) => {
@@ -106,7 +106,7 @@ exports.latestReportOfPatient = function(req,res,id){
     user._id = patient._id;
     console.log("patient Id: " + user._id);
   }).then(function () {
-    Report.findOne({ patientEntity: user._id })
+    Report.findOne({ patient: user._id })
       .sort('-createdAt')
       .populate("patient")
       .exec((err, reports) => {
@@ -127,7 +127,7 @@ exports.latestReportOfPatient = function(req,res,id){
 };
 
 exports.hasAuthorization = function (req, res, next) {
-  if (!req.report.patientEntity === req.user._id) {
+  if (!req.report.patient === req.user._id) {
     return res.status(403).send({
       message: "User is not authorized",
     });
