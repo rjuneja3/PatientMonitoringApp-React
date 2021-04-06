@@ -7,8 +7,16 @@ const Schema = mongoose.Schema;
 //
 // Define a new 'UserSchema'
 var UserSchema = new Schema({
-    firstName: String,
-	lastName: String,
+	firstName: {
+		type: String,
+		max: 30,
+		required: "First Name is required"
+	  },
+	  lastName:{
+		type: String,
+		max: 30,
+		required: "Last Name is required"
+	  },
 	email: {
 		type: String,
 		// Validate the email format
@@ -30,7 +38,12 @@ var UserSchema = new Schema({
 			(password) => password && password.length > 6,
 			'Password should be longer'
 		]
-	}
+	},
+	userRole: {
+		type: String,
+		default: "patient",
+		enum: ["patient", "nurse"]
+	  }
 	
 });
 
@@ -50,14 +63,15 @@ UserSchema.pre('save', function(next){
 	this.password = bcrypt.hashSync(this.password, saltRounds);
 	next();
 });
-
+UserSchema.methods.validatePassword= function(plainPassword, hashPassword){
+	return bcrypt.compare(plainPassword, hashPassword);
+  };
 // Create an instance method for authenticating user
 UserSchema.methods.authenticate = function(password) {
 	//compare the hashed password of the database 
 	//with the hashed version of the password the user enters
 	return this.password === bcrypt.hashSync(password, saltRounds);
 };
-
 
 // Configure the 'UserSchema' to use getters and virtuals when transforming to JSON
 UserSchema.set('toJSON', {
