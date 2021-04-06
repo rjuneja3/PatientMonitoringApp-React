@@ -1,4 +1,6 @@
-﻿// Load the module dependencies
+﻿//NEEDS TO BE UPDATED!
+
+// Load the module dependencies
 const User = require('mongoose').model('User');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
