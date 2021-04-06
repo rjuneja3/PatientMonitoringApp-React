@@ -27,6 +27,7 @@ const ReportSchema = new Schema({
         required: "Weight is required",
       }
    
-  }
+  },
+  { timestamps: true }
 );
 mongoose.model('Report', ReportSchema);
