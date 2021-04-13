@@ -1,0 +1,39 @@
+{
+  "name": "tired_devs_comp308project",
+  "version": "0.0.0",
+  "description": "By Dinara Sharipova, Nikita Melyanov, Vlad Ostrikov, Rohan Juneja",
+  "main": "server.js",
+  "author": {
+    "name": "Dinara Sharipova, Nikita Melyanov, Vlad Ostrikov, Rohan Juneja"
+  },
+  "scripts": {
+    "start": "nodemon server",
+    "dev": "nodemon server"
+  },
+  "proxy": "http://localhost:3000/",
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.12.0",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "react-google-places-autocomplete": "^3.3.0"
+  }
+}
