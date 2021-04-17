@@ -39,7 +39,7 @@ function Main(props) {
 
   return (
     <div className="">
-      <h2 className="text-left m-3">
+      <h2 className="text-center m-3">
         Hi, <a className="text-capitalize">{role} {user.fullName}</a>
       </h2>
       <hr className="hr-primary" />

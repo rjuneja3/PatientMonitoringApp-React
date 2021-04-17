@@ -46,11 +46,14 @@ function DailyReportForm(props) {
       .post(apiUrl, data)
       .then((response) => {
         console.log("result" + response);
-        if (response.data.message != "" || response.data.message != undefined) {
+       if (response.data.message === undefined) {
+          props.history.push("/");
+        } else {
+          console.log(response.data.message);
           errorMessage.push(response.data.message);
           setIfError(true);
+          return(false);
         }
-        props.history.push("/login");
       })
       .catch((error) => {
         errorMessage.push(error.message);

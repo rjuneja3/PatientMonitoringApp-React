@@ -61,7 +61,7 @@ function NavBarMenu(props) {
   }, []);
 
   return (
-    <Navbar collapseOnSelect bg="light" expand="lg" className="fixed-top">
+    <Navbar collapseOnSelect expand="lg" className="fixed-top">
       <div className="container">
         <Nav.Link className="navbar-brand d-inline-block" href="/login">
           Final Project
