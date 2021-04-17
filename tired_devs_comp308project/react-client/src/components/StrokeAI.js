@@ -60,7 +60,7 @@ function StrokeAI(props) {
         <div className="main-inner">
 
               <div className="container" align="center">
-                <h2>Stroke Prediction - AI</h2>
+                <h2>Stroke Prediction via AI</h2>
               </div>
               <div className="shadow p-3 mt-2 bg-white rounded">
                 <div className="col-md-12" style={{ textAlign: "center" }}>
@@ -70,9 +70,9 @@ function StrokeAI(props) {
                     </Spinner>
                   )}
                 </div>
-                <Form>
-                  <Form.Group>
-                    <Form.Label> weight</Form.Label>
+                <Form className="form-inline">
+                  <Form.Group className="col-md-3 ">
+                    <Form.Label>Weight</Form.Label>
                     <Form.Control
                       type="number"
                       name="weight"
@@ -84,8 +84,8 @@ function StrokeAI(props) {
                       onChange={onChange}
                     />
                   </Form.Group>
-                  <Form.Group>
-                    <Form.Label>age</Form.Label>
+                  <Form.Group className="col-md-3">
+                    <Form.Label>Age</Form.Label>
                     <Form.Control
                       type="number"
                       name="age"
@@ -97,8 +97,8 @@ function StrokeAI(props) {
                       onChange={onChange}
                     />
                   </Form.Group>
-                  <Form.Group>
-                    <Form.Label>blood_fat</Form.Label>
+                  <Form.Group className="col-md-3">
+                    <Form.Label>Blood Fat</Form.Label>
                     <Form.Control
                       type="number"
                       name="blood_fat"
@@ -110,8 +110,8 @@ function StrokeAI(props) {
                       onChange={onChange}
                     />
                   </Form.Group>
-                  <Form.Group>
-                    <Form.Label>body_fat</Form.Label>
+                  <Form.Group className="col-md-3">
+                    <Form.Label>Body Fat</Form.Label>
                     <Form.Control
                       type="number"
                       name="body_fat"
@@ -124,6 +124,7 @@ function StrokeAI(props) {
                     />
                   </Form.Group>
                 </Form>
+                <hr></hr>
                 <Button className="btn btn-primary btn-block" onClick={Training}>
                   Test
                 </Button>

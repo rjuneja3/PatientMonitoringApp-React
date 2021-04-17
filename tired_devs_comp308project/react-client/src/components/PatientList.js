@@ -62,15 +62,14 @@ function PatientList(props) {
       <div className="outer-wrapper">
         <div className="auth-wrapper">
           <div className="auth-inner">
-            <div className="bg-white">
               <h2>Patient List</h2>
               <hr className="hr-primary" />
               {patientList.length !== 0 ? (
                 <div>
-                  <ListGroup className="scrollbar scrollbar-primary  mt-3 mx-auto">
+                  <ListGroup className="scrollbar scrollbar-primary  mx-auto">
                     {patientList.map((item, idx) => (
                       <ListGroup.Item
-                        className="  mb-auto bg-white"
+                        className="  mb-auto"
                         key={idx}
                         onClick={() => {
                           showReport(item._id);
@@ -87,7 +86,7 @@ function PatientList(props) {
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
   );
 }

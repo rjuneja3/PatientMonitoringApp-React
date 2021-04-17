@@ -18,19 +18,19 @@ function Result(props) {
               if (newData.ResultofTest[0] * 100 > 50)
                 return (
                   <div className="container" align="center">
-                    <Jumbotron>
+                    
                       <h4>Risk: High chance of stroke</h4>
                       <p>Chances of a stroke: {newData.ResultofTest[0]}</p>
-                    </Jumbotron>
+                    
                   </div>
                 );
               else {
                 return (
                   <div className="container" align="center">
-                    <Jumbotron>
+                    
                       <h4>No Risk: You are healthy</h4>
                       <p>Chances of a stroke: {newData.ResultofTest[0]}</p>
-                    </Jumbotron>
+                    
                   </div>
                 );
               }

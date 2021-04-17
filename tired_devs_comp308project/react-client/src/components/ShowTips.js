@@ -39,7 +39,7 @@ function ShowTips(props) {
             <hr
               className="shadow"
               style={{
-                backgroundColor: "rgba(66,133,244,.8)",
+                backgroundColor: "rgba(255,255,255,.8)",
                 height: "1px",
               }}
             />
@@ -63,15 +63,15 @@ function ShowTips(props) {
                           <Card className="shadow mt-2 bg-white rounded ">
                             <Card.Header
                               key={index}
-                              className="font-weight-bold text-white text-capitalize"
+                              className="font-weight-bold text-capitalize"
                               style={{
-                                backgroundColor: "rgba(66,133,244,.8)",
+                                backgroundColor: "rgba(33, 140, 116,1.0)",
                               }}
                             >
                               {item.subject}
                             </Card.Header>
                             <Card.Body>
-                              <Card.Text className="ml-3 text-capitalize">
+                              <Card.Text className="ml-3 textgreen text-capitalize">
                                 {item.author.fullName} {"posted "}
                                 {item.createdAt
                                   .toString()
@@ -81,11 +81,11 @@ function ShowTips(props) {
                               </Card.Text>
                               <hr
                                 style={{
-                                  backgroundColor: "rgba(66,133,244,.8)",
+                                  backgroundColor: "rgba(33, 140, 116,1.0)",
                                   height: "1px",
                                 }}
                               />
-                              <Card.Text className="ml-5">
+                              <Card.Text className="ml-5 textgreen">
                                 {item.tipMessage}
                               </Card.Text>
                             </Card.Body>

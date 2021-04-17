@@ -45,6 +45,18 @@ body, html, .App, #root, .auth-wrapper {
   background-color: #fff !important;
   border-color: #079992 !important;
 }
+.btn-danger{
+  background: #218c74 !important;
+}
+.textgreen{
+ color: #079992 !important;
+}
+/* .stokeai input{
+width:200px;
+} */
+.scrollbar {
+   overflow: hidden !important; 
+}
 .alert-danger{
 background: #218c74 !important;
 color: #fff !important;

@@ -41,7 +41,7 @@ function PatientReportHistory(props) {
             <hr
               className="shadow"
               style={{
-                backgroundColor: "rgba(66,133,244,.8)",
+                backgroundColor: "rgba(33, 140, 116,1.0)",
                 height: "1px",
               }}
             />
