@@ -43,7 +43,12 @@ body, html, .App, #root, .auth-wrapper {
 .btn-primary {
   color: #079992 !important;
   background-color: #fff !important;
-  border-color: #fff !important;
+  border-color: #079992 !important;
+}
+.alert-danger{
+background: #218c74 !important;
+color: #fff !important;
+padding: 10px 10px !important;
 }
 .auth-wrapper {
   min-height: 100vh;
@@ -118,7 +123,12 @@ body, html, .App, #root, .auth-wrapper {
   background: #ffffff;
   transition: all .3s; */
 }
+.footer{
+background: #079992 !important;
+color: #fff !important;
+font-size: 22px;
 
+}
 .tips-inner{
   margin:0;
   min-width: 100vh;
