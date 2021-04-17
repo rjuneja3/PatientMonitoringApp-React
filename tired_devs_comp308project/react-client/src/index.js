@@ -3,12 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Footer from './components/Footer';
 
 
 
 
-ReactDOM.render([<App key="1"/>,<Footer key="2"/>],document.getElementById('root'));
+ReactDOM.render([<App/>],document.getElementById('root'));
 
 
 

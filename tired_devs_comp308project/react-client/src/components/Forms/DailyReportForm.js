@@ -6,16 +6,19 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Alert from "react-bootstrap/Alert";
+import Modal from "react-bootstrap/Modal";
 
 function DailyReportForm(props) {
-  console.log("props" + props.history.location.state);
-  const role = props.history.location.state.role;
-  const username = props.history.location.state.username;
-  
+  // console.log("props" + props.history.location.state);
+  // const role = props.history.location.state.role;
+  // const username = props.history.location.state.username;
+  const { role } = props;
+  const { username } = props;
   const [dailyBodyTemprature, setDailyBodyTemprature] = useState("");
   const [dailyPulseRate, setDailyPulseRate] = useState("");
-  const [dailySystolicBloodPressure, setDailySystolicBloodPressure] = useState("");
-  
+  const [dailySystolicBloodPressure, setDailySystolicBloodPressure] = useState(
+    ""
+  );
 
   const [
     dailyDiastolicBloodPressure,
@@ -43,7 +46,7 @@ function DailyReportForm(props) {
       .post(apiUrl, data)
       .then((response) => {
         console.log("result" + response);
-        if(response.data.message!="" || response.data.message!=undefined) {
+        if (response.data.message != "" || response.data.message != undefined) {
           errorMessage.push(response.data.message);
           setIfError(true);
         }
@@ -57,11 +60,19 @@ function DailyReportForm(props) {
   };
 
   return (
-    <div className="container main-wrapper">
-      <div className="main-inner">
+    // <div className="main-wrapper">
+
+    // <div className="main-inner">
+
+    <div>
+      <Modal.Header >
         <div>
-          <h1>Daily Report Form</h1>
+          <Modal.Title>
+            <h1>Daily Report Form</h1>
+          </Modal.Title>
         </div>
+      </Modal.Header>
+      <Modal.Body>
         <div>
           {errorMessage.length !== 0 ? (
             <div>
@@ -156,8 +167,9 @@ function DailyReportForm(props) {
             </Button>
           </Form.Row>
         </Form>
-      </div>
+      </Modal.Body>
     </div>
+    // </div>
   );
 }
 

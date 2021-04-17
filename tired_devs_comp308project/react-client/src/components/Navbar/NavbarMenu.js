@@ -11,6 +11,7 @@ import {
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 
 function NavBarMenu(props) {
@@ -67,30 +68,39 @@ function NavBarMenu(props) {
         </Nav.Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
-            {isAuthenticated == false ? (
-              <div>
-                <Nav.Link className="nav-link" href="/patientRegistration">
-                  Patient Sign up
-                </Nav.Link>
-                <Nav.Link className="nav-link" href="/nurseRegisteration">
-                  Nurse Sign up
-                </Nav.Link>
-              </div>
-            ) : (
-              <div>
-                {user.role==="patient"?(
-                  <div>
-                    <Nav.Link>Patient</Nav.Link>
-                  </div>
-                ):(
-                  <div>
-                    <Nav.Link href="patientList">Patient List</Nav.Link>
-                  </div>
-                )}
-              </div>
-            )}
-          </Nav>
+          {isAuthenticated == false ? (
+            <Nav className="mr-auto">
+              <Nav.Link href="/patientRegistration">Patient Sign up</Nav.Link>
+              <Nav.Link href="/nurseRegisteration">Nurse Sign up</Nav.Link>
+            </Nav>
+          ) : (
+            <Nav className="mr-auto">
+              {user.role === "patient" ? (
+                <div>
+                  <NavDropdown title="Options" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="/showTips">
+                      Motivational Tips
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/strokeai">
+                      Stroke Prediction
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </div>
+              ) : (
+                <div>
+                  <NavDropdown title="Options" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="/patientList">
+                      Patient List
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/nursereports">
+                      Nurse Reports
+                    </NavDropdown.Item>
+                  </NavDropdown>
+
+                </div>
+              )}
+            </Nav>
+          )}
 
           {isAuthenticated == true ? (
             <div>

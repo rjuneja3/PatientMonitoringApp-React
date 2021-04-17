@@ -24,37 +24,38 @@ function Login({ isAuthenticated, setIsAuthenticated, setAuthData }) {
 
   const url = "http://localhost:3000/signin";
 
-  const readCookie = async () => {
-    try {
-      const response = await axios.get("http://localhost:3000/read_cookie");
-      console.log("in readCookie");
-      console.log(response.data);
-      if (response.data.loggedIn === true) {
-        var responseRole = response.data.role;
-        var responseUsername = response.data.username;
-        var responseUserId = response.data.id;
-        var responseUser = response.data.user;
+  const readCookie = () => {
+    axios
+      .get("http://localhost:3000/read_cookie")
+      .then((response) => {
+        console.log("in readCookie");
+        console.log(response.data);
+        if (response.data.loggedIn === true) {
+          var responseRole = response.data.role;
+          var responseUsername = response.data.username;
+          var responseUserId = response.data.id;
+          var responseUser = response.data.user;
 
-        setUsername(responseUsername);
-        setUser(responseUser);
-        setUserId(responseUserId);
-        setIfError(false);
-        setAuthData(responseUser);
-        setRole(responseRole);
-        setIsAuthenticated(true);
+          setUsername(responseUsername);
+          setUser(responseUser);
+          setUserId(responseUserId);
+          setIfError(false);
+          setAuthData(responseUser);
+          setRole(responseRole);
+          setIsAuthenticated(true);
 
-        // setRole(responseRole);
-      } else {
-        console.log("in read cookie. user not found");
+          // setRole(responseRole);
+        } else {
+          console.log("in read cookie. user not found");
+          setRole("");
+          setIsAuthenticated(false);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
         setRole("");
         setIsAuthenticated(false);
-        
-      }
-    } catch (err) {
-      console.log(err);
-      setRole("");
-      setIsAuthenticated(false);
-    }
+      });
   };
 
   useEffect(() => {
@@ -194,7 +195,11 @@ function Login({ isAuthenticated, setIsAuthenticated, setAuthData }) {
                   </Form.Group>
                 </Form.Row>
                 <Form.Row>
-                  <Button className="btn btn-block" type="submit" onClick={login}>
+                  <Button
+                    className="btn btn-block"
+                    type="submit"
+                    onClick={login}
+                  >
                     Log in
                   </Button>
                 </Form.Row>
@@ -213,7 +218,7 @@ function Login({ isAuthenticated, setIsAuthenticated, setAuthData }) {
           </div>
         </div>
       ) : (
-        <div className="container main-wrapper">
+        <div className=" main-wrapper">
           <div className="main-inner">
             <Main
               username={username}

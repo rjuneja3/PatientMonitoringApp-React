@@ -56,56 +56,62 @@ function DailyTipForm(props) {
     <div>
       <div>
         <h4>Send Motivational Tips</h4>
-        <hr className="hr-primary" />
-        <div>
-          {message.length !== 0 ? (
-            <div className="">
-              <Alert className="text-center" variant="success">
-                {message}
-              </Alert>
-            </div>
-          ) : (
-            <div></div>
-          )}
+        <hr className="shadow"
+          style={{
+            backgroundColor: "rgba(66,133,244,.8)",
+            height: "1px",
+          }}
+        />
+        <div className="m-3 ">
+          <div>
+            {message.length !== 0 ? (
+              <div className="">
+                <Alert className="text-center" variant="success">
+                  {message}
+                </Alert>
+              </div>
+            ) : (
+              <div></div>
+            )}
+          </div>
+          <Form onSubmit={addDailyTip}>
+            <Form.Row>
+              <Form.Group as={Col} md="12">
+                <Form.Control
+                  name="subject"
+                  id="subject"
+                  value={subject}
+                  placeholder="Enter the Subject"
+                  type="text"
+                  title="Please Enter the Subject "
+                  required
+                  onChange={(e) => setSubject(e.target.value)}
+                />
+              </Form.Group>
+            </Form.Row>
+            <Form.Row>
+              <Form.Group as={Col} md="12">
+                <Form.Control
+                  as="textarea"
+                  rows="3"
+                  name="tipMessage"
+                  id="tipMessage"
+                  value={tipMessage}
+                  placeholder="Enter the Tips for patients...."
+                  type="text"
+                  title="Please enter the tip message"
+                  required
+                  onChange={(e) => setTipMessage(e.target.value)}
+                />
+              </Form.Group>
+            </Form.Row>
+            <Form.Row>
+              <Button className="btn btn-block" type="submit">
+                Submit
+              </Button>
+            </Form.Row>
+          </Form>
         </div>
-        <Form onSubmit={addDailyTip}>
-          <Form.Row>
-            <Form.Group as={Col} md="12">
-              <Form.Control
-                name="subject"
-                id="subject"
-                value={subject}
-                placeholder="Enter the Subject"
-                type="text"
-                title="Please Enter the Subject "
-                required
-                onChange={(e) => setSubject(e.target.value)}
-              />
-            </Form.Group>
-          </Form.Row>
-          <Form.Row>
-            <Form.Group as={Col} md="12">
-              <Form.Control
-                as="textarea"
-                rows="3"
-                name="tipMessage"
-                id="tipMessage"
-                value={tipMessage}
-                placeholder="Enter the Tips for patients...."
-                type="text"
-                title="Please enter the tip message"
-                required
-                onChange={(e) => setTipMessage(e.target.value)}
-              />
-            </Form.Group>
-          </Form.Row>
-
-          <Form.Row>
-            <Button className="btn btn-block" type="submit">
-              Submit
-            </Button>
-          </Form.Row>
-        </Form>
       </div>
     </div>
   );

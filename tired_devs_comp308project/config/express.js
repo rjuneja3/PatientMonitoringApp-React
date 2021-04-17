@@ -67,6 +67,7 @@ module.exports = function () {
     require('../app/routes/dailyReport.server.routes.js')(app);
     require('../app/routes/emergencyAlert.server.routes.js')(app);
     require('../app/routes/dailyTips.server.routes.js')(app);
+    require('../app/routes/ai.server.routes.js')(app);
 
     // Configure static file serving
     app.use(express.static('./public'));

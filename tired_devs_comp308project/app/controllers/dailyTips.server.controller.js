@@ -62,7 +62,7 @@ exports.create = function (req, res) {
 exports.list = function (req, res) {
   DailyTip.find()
     .sort("-createdAt")
-    .sort("-author")
+    .populate("author")
     .exec((err, alerts) => {
       if (err) {
         return res.status(400).send({
@@ -82,6 +82,22 @@ exports.infoByID = function (req, res, next, id) {
     req.tipId = dailyTip._id;
     next();
   });
+};
+
+exports.getLatestTip = function(req,res,next){
+DailyTip.findOne().sort("-createdAt").populate('author').exec((err,tip)=>{
+  if(err){
+    console.log(err);
+  }
+  if(!tip){
+    console.log("!dailyreport");
+            res.status(200).send({message: "No records found"});
+  }
+  else{
+    res.status(200).send(tip);
+  }
+});
+
 };
 
 exports.hasAuthorization = function (req, res, next) {

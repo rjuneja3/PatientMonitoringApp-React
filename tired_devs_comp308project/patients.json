@@ -1,0 +1,429 @@
+[
+  {
+    "weight": 84,
+    "age": 46,
+    "blood_fat": 354,
+    "body_fat": 28,
+    "storke": 1
+  },
+  {
+    "weight": 73,
+    "age": 20,
+    "blood_fat": 190,
+    "body_fat": 22,
+    "storke": 2
+  },
+  {
+    "weight": 65,
+    "age": 52,
+    "blood_fat": 405,
+    "body_fat": 30,
+    "storke": 1
+  },
+  {
+    "weight": 70,
+    "age": 30,
+    "blood_fat": 263,
+    "body_fat": 29,
+    "storke": 1
+  },
+  {
+    "weight": 76,
+    "age": 57,
+    "blood_fat": 451,
+    "body_fat": 26,
+    "storke": 1
+  },
+  {
+    "weight": 69,
+    "age": 25,
+    "blood_fat": 302,
+    "body_fat": 24,
+    "storke": 2
+  },
+  {
+    "weight": 63,
+    "age": 28,
+    "blood_fat": 288,
+    "body_fat": 22,
+    "storke": 2
+  },
+  {
+    "weight": 72,
+    "age": 36,
+    "blood_fat": 385,
+    "body_fat": 19,
+    "storke": 2
+  },
+  {
+    "weight": 79,
+    "age": 57,
+    "blood_fat": 402,
+    "body_fat": 25,
+    "storke": 1
+  },
+  {
+    "weight": 27,
+    "age": 24,
+    "blood_fat": 209,
+    "body_fat": 14,
+    "storke": 2
+  },
+  {
+    "weight": 89,
+    "age": 31,
+    "blood_fat": 290,
+    "body_fat": 17,
+    "storke": 2
+  },
+  {
+    "weight": 65,
+    "age": 52,
+    "blood_fat": 346,
+    "body_fat": 28,
+    "storke": 1
+  },
+  {
+    "weight": 57,
+    "age": 23,
+    "blood_fat": 254,
+    "body_fat": 17,
+    "storke": 2
+  },
+  {
+    "weight": 59,
+    "age": 60,
+    "blood_fat": 395,
+    "body_fat": 24,
+    "storke": 1
+  },
+  {
+    "weight": 69,
+    "age": 48,
+    "blood_fat": 434,
+    "body_fat": 30,
+    "storke": 1
+  },
+  {
+    "weight": 60,
+    "age": 34,
+    "blood_fat": 220,
+    "body_fat": 23,
+    "storke": 2
+  },
+  {
+    "weight": 79,
+    "age": 51,
+    "blood_fat": 374,
+    "body_fat": 24,
+    "storke": 2
+  },
+  {
+    "weight": 75,
+    "age": 50,
+    "blood_fat": 308,
+    "body_fat": 21,
+    "storke": 2
+  },
+  {
+    "weight": 82,
+    "age": 34,
+    "blood_fat": 220,
+    "body_fat": 16,
+    "storke": 2
+  },
+  {
+    "weight": 59,
+    "age": 46,
+    "blood_fat": 311,
+    "body_fat": 26,
+    "storke": 1
+  },
+  {
+    "weight": 67,
+    "age": 23,
+    "blood_fat": 181,
+    "body_fat": 13,
+    "storke": 2
+  },
+  {
+    "weight": 85,
+    "age": 37,
+    "blood_fat": 274,
+    "body_fat": 18,
+    "storke": 2
+  },
+  {
+    "weight": 88,
+    "age": 71,
+    "blood_fat": 405,
+    "body_fat": 24,
+    "storke": 1
+  },
+  {
+    "weight": 45,
+    "age": 23,
+    "blood_fat": 201,
+    "body_fat": 28,
+    "storke": 2
+  },
+  {
+    "weight": 55,
+    "age": 19,
+    "blood_fat": 180,
+    "body_fat": 18,
+    "storke": 2
+  },
+  {
+    "weight": 98,
+    "age": 65,
+    "blood_fat": 433,
+    "body_fat": 36,
+    "storke": 1
+  },
+  {
+    "weight": 44,
+    "age": 25,
+    "blood_fat": 190,
+    "body_fat": 15,
+    "storke": 2
+  },
+  {
+    "weight": 49,
+    "age": 17,
+    "blood_fat": 305,
+    "body_fat": 17,
+    "storke": 2
+  },
+  {
+    "weight": 58,
+    "age": 28,
+    "blood_fat": 244,
+    "body_fat": 18,
+    "storke": 2
+  },
+  {
+    "weight": 65,
+    "age": 60,
+    "blood_fat": 277,
+    "body_fat": 36,
+    "storke": 2
+  },
+  {
+    "weight": 95,
+    "age": 62,
+    "blood_fat": 380,
+    "body_fat": 34,
+    "storke": 1
+  },
+  {
+    "weight": 75,
+    "age": 88,
+    "blood_fat": 409,
+    "body_fat": 26,
+    "storke": 1
+  },
+  {
+    "weight": 60,
+    "age": 55,
+    "blood_fat": 2367,
+    "body_fat": 24,
+    "storke": 2
+  },
+  {
+    "weight": 77,
+    "age": 76,
+    "blood_fat": 484,
+    "body_fat": 29,
+    "storke": 1
+  },
+  {
+    "weight": 45,
+    "age": 41,
+    "blood_fat": 357,
+    "body_fat": 21,
+    "storke": 2
+  },
+  {
+    "weight": 59,
+    "age": 26,
+    "blood_fat": 150,
+    "body_fat": 16,
+    "storke": 2
+  },
+  {
+    "weight": 69,
+    "age": 67,
+    "blood_fat": 450,
+    "body_fat": 21,
+    "storke": 1
+  },
+  {
+    "weight": 88,
+    "age": 36,
+    "blood_fat": 195,
+    "body_fat": 14,
+    "storke": 2
+  },
+  {
+    "weight": 54,
+    "age": 33,
+    "blood_fat": 275,
+    "body_fat": 24,
+    "storke": 1
+  },
+  {
+    "weight": 85,
+    "age": 91,
+    "blood_fat": 411,
+    "body_fat": 26,
+    "storke": 1
+  },
+  {
+    "weight": 77,
+    "age": 68,
+    "blood_fat": 351,
+    "body_fat": 24,
+    "storke": 1
+  },
+  {
+    "weight": 65,
+    "age": 43,
+    "blood_fat": 390,
+    "body_fat": 27,
+    "storke": 1
+  },
+  {
+    "weight": 35,
+    "age": 36,
+    "blood_fat": 222,
+    "body_fat": 14,
+    "storke": 2
+  },
+  {
+    "weight": 69,
+    "age": 23,
+    "blood_fat": 198,
+    "body_fat": 20,
+    "storke": 2
+  },
+  {
+    "weight": 44,
+    "age": 85,
+    "blood_fat": 413,
+    "body_fat": 26,
+    "storke": 1
+  },
+  {
+    "weight": 35,
+    "age": 12,
+    "blood_fat": 157,
+    "body_fat": 16,
+    "storke": 2
+  },
+  {
+    "weight": 31,
+    "age": 16,
+    "blood_fat": 165,
+    "body_fat": 15,
+    "storke": 2
+  },
+  {
+    "weight": 84,
+    "age": 88,
+    "blood_fat": 325,
+    "body_fat": 26,
+    "storke": 1
+  },
+  {
+    "weight": 48,
+    "age": 57,
+    "blood_fat": 393,
+    "body_fat": 21,
+    "storke": 1
+  },
+  {
+    "weight": 55,
+    "age": 36,
+    "blood_fat": 428,
+    "body_fat": 29,
+    "storke": 1
+  },
+  {
+    "weight": 66,
+    "age": 72,
+    "blood_fat": 411,
+    "body_fat": 19,
+    "storke": 1
+  },
+  {
+    "weight": 42,
+    "age": 65,
+    "blood_fat": 377,
+    "body_fat": 21,
+    "storke": 1
+  },
+  {
+    "weight": 65,
+    "age": 67,
+    "blood_fat": 498,
+    "body_fat": 24,
+    "storke": 1
+  },
+  {
+    "weight": 74,
+    "age": 35,
+    "blood_fat": 268,
+    "body_fat": 21,
+    "storke": 2
+  },
+  {
+    "weight": 91,
+    "age": 92,
+    "blood_fat": 388,
+    "body_fat": 21,
+    "storke": 1
+  },
+  {
+    "weight": 46,
+    "age": 76,
+    "blood_fat": 325,
+    "body_fat": 21,
+    "storke": 1
+  },
+  {
+    "weight": 55,
+    "age": 61,
+    "blood_fat": 346,
+    "body_fat": 21,
+    "storke": 1
+  },
+  {
+    "weight": 38,
+    "age": 16,
+    "blood_fat": 135,
+    "body_fat": 21,
+    "storke": 2
+  },
+  {
+    "weight": 77,
+    "age": 42,
+    "blood_fat": 315,
+    "body_fat": 28,
+    "storke": 1
+  },
+  {
+    "weight": 56,
+    "age": 46,
+    "blood_fat": 315,
+    "body_fat": 21,
+    "storke": 1
+  },
+  {
+    "weight": 45,
+    "age": 41,
+    "blood_fat": 338,
+    "body_fat": 19,
+    "storke": 1
+  }
+]

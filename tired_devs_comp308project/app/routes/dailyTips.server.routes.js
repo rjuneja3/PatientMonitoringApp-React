@@ -10,7 +10,7 @@ module.exports =function(app){
         dailyTip.create);
 
     app.route('/api/dailyTips').get(dailyTip.list);
-
+    app.route('/api/dailyTips/latest').get(dailyTip.getLatestTip);
     // app.route('/api/dailyTips/users/:patientId').get(dailyTip.read);
     
     // app.route('/api/dailyTips/latest/users/:latestReportPatientId').get(dailyTip.read);

@@ -1,8 +1,8 @@
 {
   "name": "tired_devs_comp308project",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "By Dinara Sharipova, Nikita Melyanov, Vlad Ostrikov, Rohan Juneja",
-  "main": "server.js",
+  "main": "index.js",
   "author": {
     "name": "Dinara Sharipova, Nikita Melyanov, Vlad Ostrikov, Rohan Juneja"
   },
@@ -17,6 +17,8 @@
     "nodemon": "^2.0.7"
   },
   "dependencies": {
+    "@tensorflow/tfjs": "^1.7.0",
+    "@tensorflow/tfjs-node": "^1.5.1",
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",

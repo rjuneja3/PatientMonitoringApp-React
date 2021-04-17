@@ -81,7 +81,7 @@ function NurseRegistration(props) {
     <div className="auth-wrapper">
       <div className="auth-inner">
         <div>
-          <h1>Patient Registration</h1>
+          <h1>Nurse Registration</h1>
           <div>
             {errorMessage.length !== 0 ? (
               <div>
