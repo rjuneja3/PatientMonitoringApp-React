@@ -1,3 +1,4 @@
+It was a group project so we did it all on one PC (on MS-Teams meeting)
 Patient Monitoring App: React based web application with MongoDB for patient monitoring in hospitals<br><br>
 
 Instructions: <br>
